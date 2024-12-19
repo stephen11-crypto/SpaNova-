@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Paradise Resort</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>🏖️ SpaNova</h1>
+        <nav>
+            <ul>
+                <li><a href="newProject.html">Home</a></li>
+                <li><a href="accommodation.html">Accommodations</a></li>
+                <li><a href="spaServices.html">Spa Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Whether you have questions, want to make a reservation, or just want to know more about our resort, feel free to get in touch with us.</p>
+            
+            <h3>Our Address</h3>
+            <p>Paradise Resort<br>
+               123 Ocean Drive, Kokrobite, <br>
+               Coastal Region, 56789</p>
+            
+            <h3>Phone & Email</h3>
+            <p><strong>Phone:</strong> +233(0) 50 6765 045</p>
+            <p><strong>Email:</strong> 4211231103@live.gctu.edu.gh</p>
+            
+            <h3>Opening Hours</h3>
+            <p>Our resort is open 7 days a week, and we’re available for inquiries at any time:</p>
+            <ul>
+                <li><strong>Monday to Friday:</strong> 9:00 AM - 7:00 PM</li>
+                <li><strong>Saturday:</strong> 10:00 AM - 6:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+            </ul>
+
+            <h3>Send Us a Message</h3>
+            <p>Use the form below to get in touch with us. Our team will respond to your message as soon as possible.</p>
+
+            <form action="/submit_form" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Paradise Resort. All rights reserved.</p>
+    </footer>
+</body>
+</html>

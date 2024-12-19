@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Resort - Accommodations</title>
+    <link rel="stylesheet" href="accommodation.css">
+</head>
+<body>
+    <header>
+        <h1>🏖️ SpaNova</h1>
+        <nav>
+            <ul>
+                <li><a href="newProject.html">Home</a></li>
+                <li><a href="accommodation.html" class="active">Accommodations</a></li>
+                <li><a href="spaServices.html">Spa Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accommodations">
+            <h2>Our Accommodations</h2>
+            <p>Discover the perfect room or villa to complement your dream getaway. We offer a variety of luxurious options to suit every need and preference.</p>
+            
+            <div class="room-types">
+                <div class="room">
+                    <h3>Standard Room</h3>
+                    <img src="standard.jpg" alt="Standard Room">
+                    <p>A cozy room with a queen bed, modern amenities, and garden views. Perfect for couples or solo travelers.</p>
+                </div>
+                <div class="room">
+                    <h3>Deluxe Suite</h3>
+                    <img src="Deluxe.jpg" alt="Deluxe Suite">
+                    <p>Experience luxury with our Deluxe Suite featuring a private balcony, ocean views, and a spacious living area.</p>
+                </div>
+                <div class="room">
+                    <h3>Beach Villa</h3>
+                    <img src="Beach Villa1.jpg" alt="Beach Villa">
+                    <p>Stay in a private villa steps away from the beach, complete with a personal pool and premium amenities.</p>
+                </div>
+            </div>
+            
+            <p>Prices start at ₵120 per night for our Standard Rooms.</p>
+        </section>
+
+        <section id="form-section">
+            <h2>Book Your Stay</h2>
+            <form action="/submit-booking" method="post" id="booking-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="room-type">Preferred Room Type:</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="standard-room">Standard Room</option>
+                        <option value="deluxe-suite">Deluxe Suite</option>
+                        <option value="beach-villa">Beach Villa</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button">Submit Booking Request</button>
+            </form>
+        </section>
+
+        <section id="reviews">
+            <h2>Guest Reviews</h2>
+            <div class="reviews">
+                <blockquote>
+                    "The Deluxe Suite was amazing! The view and service were exceptional. Can't wait to come back!"
+                    <cite>- Sarah M.</cite>
+                </blockquote>
+                <blockquote>
+                    "A perfect getaway. The Beach Villa was everything we hoped for and more."
+                    <cite>- John & Emily</cite>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Paradise Resort. All rights reserved.</p>
+    </footer>
+</body>
+</html>
